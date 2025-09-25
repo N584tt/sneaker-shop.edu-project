@@ -5,16 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneaker Shop</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="../assets/icons/header/logo.png" type="image/x-icon">
 </head>
 
 
 
-<body>
+<body class="p-[4vw] w-full bg-[#E7F6FF] ">
+    <div class="container bg-white p-[3vw] rounded-4xl">
+    <header class="flex justify-between items-center mb-15">
+     <div class="logo flex items-center gap-5">
+    <img src="../assets/icons/header/logo.png" alt="">
+    <div class="logo-text">
+    <h1 class="text-3xl font-bold ">SNEAKERS SHOP</h1>
+    <p class="text-slate-400">Магазин лучших кросовок</p>
+
+    </div>
+
+     </div>
+
+     <nav class="flex items-center gap-5">
+
+     <div class="flex items-center gap-2">
+    <img src="../assets/icons/header/cart.svg" alt="">
+    <p class="text-slate-500">7230 тг.</p>
+
+     </div>
+
+     <div class="flex items-center gap-2">
+    <img src="../assets/icons/header/heart.svg" alt="">
+    <p class="text-slate-500">Избранное</p>
+
+     </div>
+
+     <div class="flex items-center gap-2">
+    <img src="../assets/icons/header/profile.svg" alt="">
+    <p class="text-slate-500">Профиль</p>
+
+     </div>
+
+     </nav>
+
+    </header>
+
+    <hr class="border border-slate-300">
+
     
+<!-- баннер  -->
+<div class="mt-8 bg-[#F4EFE9] rounded-2xl shadow-md overflow-hidden flex items-center">
+
+  <!-- Левый контейнер хрупкий -->
+  <div class="w-1/2 p-6 flex flex-col justify-center">
+    <img src="../assets/main/slider1-corner.png" alt="Adidas" class="w-16 mb-2 mt-[-2rem]">
+    <h2 class="text-3xl font-bold leading-tight">
+
+      <span class="text-green-600">Stan Smith,</span><br> Forever!
+    </h2>
+
+    <button id="buyBtn" 
+            class="mt-4 bg-green-500 text-white font-bold py-2 px-8 rounded-full transition-transform duration-200 w-full">
+      КУПИТЬ
+    </button>
+  </div>
+
+  <!-- правый имедж не трогать -->
+  <div class="w-1/2 h-full">
+    <img src="../assets/main/slider1.png" alt="Sneakers with Kermit" class="w-full h-full object-cover">
+  </div>
+</div>
+ 
+<section class="products mt-10">
+    <div class="flex justify-between items-center">
+
+     <h2 class="text-2xl font-bold">Все модели</h2>
+    <div class="search flex gap-4 items-center  border-1 border-gray-300 p-1 rounded-xl">
+     <img src="../assets/main/lupa.svg" alt="">
+     <input type="text" class="outline-none ">
+    </div>
 
 
 
+</section>
 
+
+    </div>
+
+
+
+<script src="../src/scripts/script.js"></script>
 </body>
 
 
