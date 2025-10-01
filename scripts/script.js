@@ -1,4 +1,4 @@
-// ====== ДАННЫЕ ТОВАРОВ (тот же массив что и раньше) ======
+
 const products = [
   { id: 1, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: "79 990 тг.", img: "../assets/products/nike-blazer-mid-suede.jpg", liked: "../assets/icons/liked.svg", cart: "../assets/icons/addcart.svg" },
   { id: 2, title: "Мужские Кроссовки Nike Air Max 270", price: "79 990 тг.", img: "../assets/products/nike-air-max-270.jpg", liked: "../assets/icons/umliked.svg", cart: "../assets/icons/addedcart.svg" },
