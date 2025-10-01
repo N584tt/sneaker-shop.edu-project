@@ -7,7 +7,7 @@ const products = [
   { id: 5, title: "Мужские Кроссовки Under Armour Curry 8", price: "90 990 тг.", img: "assets/products/under-armor-curry-8.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
   { id: 6, title: "Мужские Кроссовки Nike Kyrie 7", price: "67 990 тг.", img: "assets/products/nike-kyrie-7.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
   { id: 7, title: "Мужские Кроссовки Jordan Air Jordan 11", price: "64 699 тг.", img: "assets/products/jordan-air-jordan-11.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
-  { id: 8, title: "Мужские Кроссовки Nike LeBron XVIII", price: "99 990 тг.", img: "assets/products/nike-lebron-xviii.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
+  { id: 8, title: "Мужские Кроссовки Nike LeBron XVIII", price: "99 990 тг.", img: "assets/products/nike-lebrom-xviii.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
   { id: 9, title: "Мужские Кроссовки Nike Lebron XVIII Low", price: "83 399 тг.", img: "assets/products/nike-lebrom-xvii-low.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
   { id: 10, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: "51 990 тг.", img: "assets/products/nike-blazer-mid-suede-green.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
   { id: 11, title: "Кроссовки Puma X Aka Boku Future Rider", price: "53 990 тг.", img: "assets/products/aka-boku-future-rider.jpg", liked: "assets/icons/umliked.svg", cart: "assets/icons/addcart.svg" },
