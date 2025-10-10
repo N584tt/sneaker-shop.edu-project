@@ -22,17 +22,17 @@
       </div>
 
       <nav class="flex items-center gap-5">
-        <div class="flex items-center gap-2">
+        <div class="cart-container flex items-center gap-2 cursor-pointer">
           <img src="assets/icons/header/cart.svg" alt="cart">
-          <p class="text-slate-500">7230 тг.</p>
+          <p class="text-slate-500">0 тг.</p> <!-- Изменили на 0 для динамики -->
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="favorites-container flex items-center gap-2 cursor-pointer">
           <img src="assets/icons/header/heart.svg" alt="heart">
           <p class="text-slate-500">Избранное</p>
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="profile-container flex items-center gap-2 cursor-pointer">
           <img src="assets/icons/header/profile.svg" alt="profile">
           <p class="text-slate-500">Профиль</p>
         </div>
@@ -75,6 +75,51 @@
     </section>
 
   </div>
+
+
+  <!-- Корзина -->
+<div id="cartPanel" class="fixed top-0 right-0 w-[350px] h-full bg-white shadow-2xl p-6 translate-x-full transition-transform duration-300 z-50">
+  <div class="flex justify-between items-center">
+    <h2 class="text-2xl font-bold">Корзина</h2>
+    <button id="closeCartBtn" class="text-2xl">&times;</button>
+  </div>
+  <div id="cartItems" class="flex flex-col gap-4 mt-4"></div>
+  <hr class="my-4">
+  <div class="flex justify-between font-semibold">
+    <p>Итого:</p>
+    <p id="cartTotal">0 тг.</p>
+  </div>
+  <div class="flex justify-between font-semibold mt-2">
+    <p>Налог 5%:</p>
+    <p id="cartTax">0 тг.</p>
+  </div>
+  <div class="flex justify-between font-semibold mt-2">
+    <p>На итог:</p>
+    <p id="cartGrandTotal">0 тг.</p>
+  </div>
+  <button id="checkoutBtn" class="mt-6 w-full bg-green-500 text-white font-bold py-2 rounded-xl hover:bg-green-600">Оформить заказ</button>
+</div>
+
+<!-- Закладки -->
+<div id="favoritesPanel" class="fixed top-0 right-0 w-[350px] h-full bg-white shadow-2xl p-6 translate-x-full transition-transform duration-300 z-50">
+  <div class="flex justify-between items-center">
+    <h2 class="text-2xl font-bold">Закладки</h2>
+    <button id="closeFavoritesBtn" class="text-2xl">&times;</button>
+  </div>
+  <div id="favoritesItems" class="flex flex-col gap-4 mt-4"></div>
+</div>
+
+<!-- Профиль (новая панель для полноты) -->
+<div id="profilePanel" class="fixed top-0 right-0 w-[350px] h-full bg-white shadow-2xl p-6 translate-x-full transition-transform duration-300 z-50">
+  <div class="flex justify-between items-center">
+    <h2 class="text-2xl font-bold">Профиль</h2>
+    <button id="closeProfileBtn" class="text-2xl">&times;</button>
+  </div>
+  <div class="text-center mt-4">
+    <p>Здесь будет ваш профиль. Пока не реализован :(</p>
+    <button id="backProfileBtn" class="mt-4 bg-green-500 text-white font-bold py-2 px-4 rounded-xl">Вернуться назад</button>
+  </div>
+</div>
 
   <!-- Скрипт -->
   <script src="script.js" defer></script>
