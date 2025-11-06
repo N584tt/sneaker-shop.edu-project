@@ -1,4 +1,4 @@
-// ====== ДАННЫЕ ТОВАРОВ ======
+
 const products = [
   { id: 1, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 79990, img: "assets/products/nike-blazer-mid-suede.jpg", liked: false, inCart: false },
   { id: 2, title: "Мужские Кроссовки Nike Air Max 270", price: 79990, img: "assets/products/nike-air-max-270.jpg", liked: false, inCart: false },
@@ -14,10 +14,9 @@ const products = [
   { id: 12, title: "Мужские Кроссовки Nike Kyrie Flytrap IV", price: 67990, img: "assets/products/nike-kyrie-flytrap-iv.jpg", liked: false, inCart: false }
 ];
 
-// ====== КОНТЕЙНЕР ДЛЯ КАРТОЧЕК ======
 const cardsContainer = document.querySelector(".cards");
 
-// ====== ФУНКЦИЯ ОТРИСОВКИ ТОВАРОВ ======
+
 function renderProducts(list) {
   if (!cardsContainer) {
     console.error("Контейнер .cards не найден. Убедись, что в HTML есть <div class='cards'> ...</div>");
@@ -44,10 +43,10 @@ function renderProducts(list) {
     `;
   });
   cardsContainer.innerHTML = html;
-  updateHeaderCartTotal(); // Обновляем сумму в шапке после рендера
+  updateHeaderCartTotal(); 
 }
 
-// ====== ПОИСК ======
+
 const searchInput = document.querySelector(".search input");
 if (searchInput) {
   searchInput.addEventListener("input", () => {
@@ -59,7 +58,7 @@ if (searchInput) {
   console.warn("Поле поиска не найдено. Поиск отключён.");
 }
 
-// ====== ФУНКЦИЯ ОБНОВЛЕНИЯ СУММЫ В ШАПКЕ ======
+
 function updateHeaderCartTotal() {
   const cartTotalElement = document.querySelector(".cart-container p");
   if (cartTotalElement) {
@@ -68,7 +67,7 @@ function updateHeaderCartTotal() {
   }
 }
 
-// ====== ОТКРЫТИЕ ПАНЕЛЕЙ ======
+
 const cartContainer = document.querySelector(".cart-container");
 const favoritesContainer = document.querySelector(".favorites-container");
 const profileContainer = document.querySelector(".profile-container");
@@ -111,7 +110,7 @@ if (profileContainer && profilePanel && closeProfileBtn) {
   });
 }
 
-// ====== ФУНКЦИЯ ОТРИСОВКИ КОРЗИНЫ ======
+
 function renderCart() {
   const cartItems = document.getElementById("cartItems");
   const cartTotal = document.getElementById("cartTotal");
@@ -175,7 +174,7 @@ function renderCart() {
   }
 }
 
-// ====== ФУНКЦИЯ ОТРИСОВКИ ЗАКЛАДОК ======
+
 function renderFavorites() {
   const favoritesItems = document.getElementById("favoritesItems");
   if (!favoritesItems) return;
@@ -218,7 +217,7 @@ function renderFavorites() {
   }
 }
 
-// ====== СЛУШАТЕЛЬ СОБЫТИЙ ДЛЯ ЛАЙКОВ И КОРЗИНЫ ======
+
 document.addEventListener("click", e => {
   if (e.target.classList.contains("like-btn")) {
     const id = +e.target.dataset.id;
@@ -237,7 +236,7 @@ document.addEventListener("click", e => {
   }
 });
 
-// ====== КНОПКА "КУПИТЬ" ======
+
 const btn = document.getElementById("buyBtn");
 if (btn) {
   btn.addEventListener("click", () => {
